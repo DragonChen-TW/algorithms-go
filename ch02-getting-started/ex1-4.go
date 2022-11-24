@@ -6,7 +6,7 @@ import "fmt"
 // Title:	Part1 Ch2 ex1-4 Linear Search
 // Date:	2022/10/14
 
-// Textbook version p21
+// Textbook version p25
 func LinearSearch(nums []int, value int) int {
 	i := 0
 	for i < len(nums) && nums[i] != value {

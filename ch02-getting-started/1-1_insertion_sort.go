@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // Author:	DragonChen https://github.com/dragonchen-tw/
-// Title:	Part1 Ch2 - Insertion Sort
+// Title:	Part1 Ch2 - 1-1 Insertion Sort
 // Date:	2022/05/23
 
 // Textbook p19
