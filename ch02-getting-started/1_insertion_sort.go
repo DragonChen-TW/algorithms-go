@@ -24,6 +24,6 @@ func InsertionSort(nums []int, n int) {
 
 func main() {
 	var a []int = []int{5, 2, 4, 6, 1, 3}
-	InsertionSort(a, 6)
+	InsertionSort(a, len(a))
 	fmt.Println(a)
 }

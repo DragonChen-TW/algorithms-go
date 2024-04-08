@@ -51,15 +51,15 @@ func MergeSort(nums []int, p, r int) {
 	Merge(nums, p, q, r)
 }
 func Merge(nums []int, p, q, r int) {
-	len_l := q - p + 1
-	len_r := r - q
-	var L []int = make([]int, len_l)
-	var R []int = make([]int, len_r)
+	lenL := q - p + 1
+	lenR := r - q
+	var L []int = make([]int, lenL)
+	var R []int = make([]int, lenR)
 	copy(L, nums[p:q+1])
 	copy(R, nums[q+1:r+1])
 
 	var i, j, k int = 0, 0, p
-	for i < len_l && j < len_r {
+	for i < lenL && j < lenR {
 		if L[i] <= R[j] {
 			nums[k] = L[i]
 			i++
@@ -70,12 +70,12 @@ func Merge(nums []int, p, q, r int) {
 		k++
 	}
 
-	for i < len_l {
+	for i < lenL {
 		nums[k] = L[i]
 		i++
 		k++
 	}
-	for j < len_r {
+	for j < lenR {
 		nums[k] = R[j]
 		j++
 		k++
